@@ -28,6 +28,8 @@ class BuildingController extends Controller
         $tenant = Building::create([
             'name' => Str::random(),
             'status_id' => 1,
+            'portal_hostname' => 'abc.info',
+            'portal_path' => 'abc.info',
         ]);
 
         event(new \Tenancy\Tenant\Events\Created($tenant));

@@ -23,6 +23,8 @@ class Building extends Model implements Tenant, IdentifiesByHttp
 
     protected $fillable = [
         'status_id',
+        'portal_hostname',
+        'portal_path',
         'name',
     ];
 

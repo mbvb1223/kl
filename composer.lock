@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad8d711dfa61ede3d550d4d9eeb55d8d",
+    "content-hash": "7759d62ff4d71dbae466d8a165b400d9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4397,6 +4397,81 @@
                 }
             ],
             "time": "2020-05-30T20:35:19+00:00"
+        },
+        {
+            "name": "tenancy/hooks-hostname",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tenancy/hooks-hostname.git",
+                "reference": "bf74ac3a3c24067fefb8d08405052aef4ddc82d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tenancy/hooks-hostname/zipball/bf74ac3a3c24067fefb8d08405052aef4ddc82d8",
+                "reference": "bf74ac3a3c24067fefb8d08405052aef4ddc82d8",
+                "shasum": ""
+            },
+            "require": {
+                "tenancy/framework": "*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tenancy\\Hooks\\Hostname\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tenancy\\Hooks\\Hostname\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arlon Antonius",
+                    "email": "opensource@arlonantonius.com",
+                    "homepage": "https://arlonantonius.com"
+                }
+            ],
+            "description": "The tenancy/tenancy hostname mutations",
+            "keywords": [
+                "hooks",
+                "hostname",
+                "tenancy"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/ArlonAntonius",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/[user1",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/fletch3555] # Replace with up to 4 GitHub Sponsors-enabled usernames e.g.",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/tenancy",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/user2",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/tenancy",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2020-06-24T14:10:07+00:00"
         },
         {
             "name": "tenancy/tenancy",
