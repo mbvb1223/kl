@@ -32,7 +32,7 @@ class BuildingController extends Controller
             'portal_path' => 'abc.info',
         ]);
 
-        event(new \Tenancy\Tenant\Events\Created($tenant));
+        Building::first()->delete();
     }
 
     /**

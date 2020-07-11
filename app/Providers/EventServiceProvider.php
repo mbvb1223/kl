@@ -19,18 +19,25 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
 
-        \Tenancy\Hooks\Database\Events\Drivers\Configuring::class => [
-            \App\Listeners\ConfigureTenantDatabase::class
-        ],
-        \Tenancy\Affects\Connections\Events\Resolving::class => [
-            \App\Listeners\ResolveTenantConnection::class
-        ],
         \Tenancy\Affects\Connections\Events\Drivers\Configuring::class => [
             \App\Listeners\ConfigureTenantConnection::class
         ],
+
+        \Tenancy\Hooks\Database\Events\Drivers\Configuring::class => [
+            \App\Listeners\ConfigureTenantDatabase::class
+        ],
+
+        \Tenancy\Hooks\Database\Events\ConfigureDatabaseMutation::class => [
+            \App\Listeners\ConfigureTenantDatabaseMutations::class
+        ],
+
         \Tenancy\Hooks\Migration\Events\ConfigureMigrations::class => [
             \App\Listeners\ConfigureTenantMigrations::class
-        ]
+        ],
+
+        \Tenancy\Affects\Connections\Events\Resolving::class => [
+            \App\Listeners\ResolveTenantConnection::class
+        ],
     ];
 
     /**
