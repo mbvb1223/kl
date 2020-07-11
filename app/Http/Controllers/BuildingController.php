@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Building;
+use App\Models\Building;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class BuildingController extends Controller
 {
@@ -24,7 +25,12 @@ class BuildingController extends Controller
      */
     public function create()
     {
-        //
+        $tenant = Building::create([
+            'name' => Str::random(),
+            'status_id' => 1,
+        ]);
+
+        event(new \Tenancy\Tenant\Events\Created($tenant));
     }
 
     /**
