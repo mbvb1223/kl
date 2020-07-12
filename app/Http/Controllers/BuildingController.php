@@ -32,7 +32,7 @@ class BuildingController extends Controller
             'portal_path' => 'abc.info',
         ]);
 
-        Building::first()->delete();
+//        Building::first()->delete();
     }
 
     /**

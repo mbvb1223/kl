@@ -15,6 +15,8 @@ class Building extends Model implements Tenant, IdentifiesByHttp
 {
     use AllowsTenantIdentification;
 
+    const PREFIX = 'kl';
+
     protected $dispatchesEvents = [
         'created' => Created::class,
         'updated' => Updated::class,
@@ -35,7 +37,7 @@ class Building extends Model implements Tenant, IdentifiesByHttp
 
     public function getTenantKey()
     {
-        return $this->id;
+        return self::PREFIX . '_' . $this->id;
     }
 
     public function getTenantIdentifier(): string
