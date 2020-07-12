@@ -13,9 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::resource('buildings', 'BuildingController');
-
+Route::resource('managers', 'Tenant\ManagerController');
