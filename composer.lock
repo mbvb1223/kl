@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3be6b7772b94bbcf9888f260df27a3c8",
+    "content-hash": "53ab0f55909e2e394e8927035f034257",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4456,6 +4456,124 @@
                 }
             ],
             "time": "2020-05-15T23:04:27+00:00"
+        },
+        {
+            "name": "tenancy/affects-routes",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tenancy/affects-routes.git",
+                "reference": "e6b52dba551d109c608d2dcadb3d7574e6b36c39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tenancy/affects-routes/zipball/e6b52dba551d109c608d2dcadb3d7574e6b36c39",
+                "reference": "e6b52dba551d109c608d2dcadb3d7574e6b36c39",
+                "shasum": ""
+            },
+            "require": {
+                "tenancy/framework": "*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tenancy\\Affects\\Routes\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tenancy\\Affects\\Routes\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arlon Antonius",
+                    "email": "opensource@arlon.dev",
+                    "homepage": "https://arlon.dev"
+                }
+            ],
+            "description": "The tenancy/tenancy routes mutations",
+            "keywords": [
+                "affects",
+                "routes",
+                "tenancy"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/tenancy",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/tenancy",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2020-05-03T15:39:56+00:00"
+        },
+        {
+            "name": "tenancy/affects-urls",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tenancy/affects-urls.git",
+                "reference": "a45292bc8d10c45ad507c5fbd0de166d48c3ce8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tenancy/affects-urls/zipball/a45292bc8d10c45ad507c5fbd0de166d48c3ce8c",
+                "reference": "a45292bc8d10c45ad507c5fbd0de166d48c3ce8c",
+                "shasum": ""
+            },
+            "require": {
+                "tenancy/framework": "*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tenancy\\Affects\\URLs\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tenancy\\Affects\\URLs\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arlon Antonius",
+                    "email": "opensource@arlon.dev",
+                    "homepage": "https://arlon.dev"
+                }
+            ],
+            "description": "The tenancy/tenancy urls mutations",
+            "keywords": [
+                "affects",
+                "tenancy",
+                "urls"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/tenancy",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/tenancy",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2020-05-03T15:39:56+00:00"
         },
         {
             "name": "tenancy/db-driver-mysql",
