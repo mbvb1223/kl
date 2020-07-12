@@ -49,7 +49,6 @@ class Building extends Model implements Tenant, IdentifiesByHttp
     {
         return $this->query()
             ->where('portal_hostname', $request->getHttpHost())
-            ->where('portal_path', $request->path())
             ->first();
     }
 }

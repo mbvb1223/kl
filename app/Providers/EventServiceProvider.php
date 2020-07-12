@@ -34,8 +34,16 @@ class EventServiceProvider extends ServiceProvider
             \App\Listeners\ConfigureTenantMigrations::class
         ],
 
+        \Tenancy\Hooks\Migration\Events\ConfigureSeeds::class => [
+            \App\Listeners\ConfigureTenantSeeds::class
+        ],
+
         \Tenancy\Affects\Connections\Events\Resolving::class => [
             \App\Listeners\ResolveTenantConnection::class
+        ],
+
+        \Tenancy\Affects\Routes\Events\ConfigureRoutes::class => [
+            \App\Listeners\TenantRoutes::class
         ],
     ];
 

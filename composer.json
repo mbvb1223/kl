@@ -15,6 +15,8 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "tenancy/affects-connections": "^1.0",
+        "tenancy/affects-routes": "^1.0",
+        "tenancy/affects-urls": "^1.0",
         "tenancy/db-driver-mysql": "^1.0",
         "tenancy/framework": "^1.0",
         "tenancy/hooks-database": "^1.0",
