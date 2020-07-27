@@ -174,6 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Orchestra\Tenanti\TenantiServiceProvider::class,
+        Orchestra\Tenanti\CommandServiceProvider::class,
 
     ],
 
@@ -226,6 +228,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Tenanti' => Orchestra\Support\Facades\Tenanti::class,
 
     ],
 
